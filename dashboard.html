@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard · Opiny (v2 · Mercury dark)</title><link rel="stylesheet" href="app.css"></head>
+<body data-nav="dashboard">
+<main class="page">
+  <div class="page-head">
+    <div><p class="eyebrow">Overview</p><h1 class="title">Dashboard</h1></div>
+  </div>
+  <div class="stack">
+    <section class="card company">
+      <div>
+        <h2>Northwind Studio</h2>
+        <div class="meta">
+          <span><svg class="i"><use href="#i-globe"/></svg>www.northwind-studio.example</span>
+          <span><svg class="i"><use href="#i-pin"/></svg>Musterstraße 12, 10115 Berlin, Germany</span>
+        </div>
+      </div>
+      <button class="btn btn-secondary btn-sm"><svg class="i"><use href="#i-edit"/></svg>Edit</button>
+    </section>
+    <div class="grid grid-3">
+      <section class="card stat">
+        <div class="row">Total locations<span class="ico"><svg class="i"><use href="#i-pin"/></svg></span></div>
+        <div class="num">1</div><div class="cap">Active locations</div>
+        <div class="foot"><a class="btn btn-secondary btn-sm" href="locations.html">View locations</a></div>
+      </section>
+      <section class="card stat">
+        <div class="row">Total reviews<span class="ico"><svg class="i"><use href="#i-chat"/></svg></span></div>
+        <div class="num">3</div><div class="cap">Last 30 days</div>
+        <svg class="spark" viewBox="0 0 300 56" preserveAspectRatio="none" role="img" aria-label="Reviews trend, demo data">
+          <defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5266eb" stop-opacity=".45"/><stop offset="1" stop-color="#5266eb" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 44 L30 40 L60 42 L90 30 L120 34 L150 22 L180 26 L210 14 L240 20 L270 8 L300 12 L300 56 L0 56Z" fill="url(#sg)"/>
+          <path d="M0 44 L30 40 L60 42 L90 30 L120 34 L150 22 L180 26 L210 14 L240 20 L270 8 L300 12" fill="none" stroke="#8a9aff" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+        </svg>
+      </section>
+      <section class="card stat">
+        <div class="row">Google score<span class="ico"><svg class="i"><use href="#i-star"/></svg></span></div>
+        <div class="num">5.0<sup>/5</sup></div><div class="cap">16 reviews · synced 6 h ago</div>
+      </section>
+    </div>
+    <section class="card sentiment">
+      <div class="l"><span class="muted">Sentiment</span><span class="tag positive">Positive</span><span class="muted" style="font-size:var(--text-xs)">Sep 27 – Oct 27, 2026</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex:1;min-width:240px">
+        <div class="bar" role="img" aria-label="100% positive"><i style="width:100%;background:var(--tag-positive-fg)"></i></div>
+        <div class="legend"><span><b style="background:var(--tag-positive-fg)"></b>Positive 100%</span><span><b style="background:var(--color-fill-strong)"></b>Neutral 0%</span><span><b style="background:var(--tag-negative-fg)"></b>Negative 0%</span></div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="shell.js"></script>
+</body></html>

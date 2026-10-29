@@ -1,0 +1,76 @@
+/* Opiny admin — v2 "Mercury dark" tokens (proposed, 2026-10-27)
+   Reference R2 mercury.com: ink-navy canvas, lavender-grey text, periwinkle accent,
+   frosted-glass surfaces (blur 20px over translucent lavender), 12px cards, pill buttons.
+   Font: Inter variable at Mercury-like in-between weights (stand-in for proprietary Arcadia). */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap");
+:root {
+  color-scheme: dark;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --text-xs: 12px; --lh-xs: 18px; --text-sm: 13px; --lh-sm: 20px;
+  --text-base: 14px; --lh-base: 22px; --text-lg: 16px; --lh-lg: 24px;
+  --text-2xl: 34px; --lh-2xl: 40px; --text-stat: 44px; --lh-stat: 48px;
+  --weight-display: 380; --weight-regular: 360; --weight-medium: 480;
+  --tracking-display: -0.025em; --tracking-body: 0;
+
+  /* R2 observed: #171721 base, #1e1e2a surface, #272735 raised, text #ededf3 / #c3c3cc / #70707d */
+  --color-bg: #121219;
+  --color-bg-subtle: rgba(175,178,206,.05);
+  --color-header-bg: rgba(23,23,33,.62);
+  --color-surface: rgba(30,30,42,.62);
+  --color-surface-solid: #1e1e2a;
+  --color-raised: #272735;
+  --color-fill: rgba(175,178,206,.10);
+  --color-fill-strong: rgba(175,178,206,.20);
+  --color-border: rgba(175,178,206,.16);
+  --color-border-subtle: rgba(175,178,206,.09);
+  --color-highlight-edge: rgba(255,255,255,.07);   /* 1px top light on glass */
+  --color-text: #ededf3; --color-text-muted: #a9a9b8; --color-text-subtle: #767684;
+  --color-primary: #5266eb; --color-on-primary: #ffffff;   /* R2 "Open account" */
+  --color-primary-hover: #6377f0;
+  --color-accent-soft: rgba(156,180,232,.18);               /* R2 secondary button */
+  --color-accent-text: #cdddff;
+  --color-focus: #8da0ff;
+  --color-highlight: rgba(82,102,235,.28);
+
+  --tag-positive-bg: rgba(74,196,140,.14); --tag-positive-fg: #7fe0b0;
+  --tag-generated-bg: rgba(140,120,255,.16); --tag-generated-fg: #c5b8ff;
+  --tag-clicked-bg: rgba(82,140,235,.16);  --tag-clicked-fg: #a9c8ff;
+  --tag-negative-bg: rgba(240,96,110,.15); --tag-negative-fg: #ffa3ab;
+  --tag-neutral-bg: rgba(175,178,206,.12); --tag-neutral-fg: #d6d6e0;
+  --tag-required-bg: rgba(240,96,140,.16); --tag-required-fg: #ffadc8;
+  --tag-mapped-bg: rgba(82,140,235,.16);   --tag-mapped-fg: #a9c8ff;
+
+  --glass-blur: 20px; --glass-sat: 140%;
+  --radius-pill: 40px; --radius-card: 14px; --radius-input: 10px; --radius-sm: 8px;
+  --header-h: 64px; --page-max: 1280px; --page-pad-x: 32px;
+  --card-pad: 24px; --gap: 16px; --section-gap: 32px;
+  --btn-h: 36px; --btn-h-sm: 28px; --input-h: 40px;
+  --cell-pad: 18px 20px; --th-pad: 12px 20px;
+  --shadow-float: 0 8px 30px rgba(0,0,0,.35);
+  --shadow-pop: 0 16px 48px rgba(0,0,0,.5);
+  --ease: cubic-bezier(.2,.7,.2,1); --dur: 180ms;
+}
+
+/* Light — Mercury's light app surfaces (#f4f5f9 canvas observed on mercury.com), same periwinkle accent */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #f4f5f9;
+  --color-bg-subtle: rgba(112,115,147,.05);
+  --color-header-bg: rgba(255,255,255,.7);
+  --color-surface: rgba(255,255,255,.72);
+  --color-surface-solid: #ffffff; --color-raised: #ffffff;
+  --color-fill: rgba(112,115,147,.08); --color-fill-strong: rgba(112,115,147,.16);
+  --color-border: rgba(112,115,147,.18); --color-border-subtle: rgba(112,115,147,.10);
+  --color-highlight-edge: rgba(255,255,255,.9);
+  --color-text: #1e1e2a; --color-text-muted: #535461; --color-text-subtle: #70707d;
+  --color-accent-soft: rgba(82,102,235,.10); --color-accent-text: #3446c4;
+  --color-focus: #5266eb; --color-highlight: rgba(82,102,235,.14);
+  --tag-positive-bg: #e3f6ec; --tag-positive-fg: #1d6b45;
+  --tag-generated-bg: #eeeafe; --tag-generated-fg: #4b37b5;
+  --tag-clicked-bg: #e6eefe; --tag-clicked-fg: #2847a8;
+  --tag-negative-bg: #fde7e9; --tag-negative-fg: #a3283a;
+  --tag-neutral-bg: #eef0f5; --tag-neutral-fg: #3c3d4a;
+  --tag-required-bg: #fde7ef; --tag-required-fg: #a3285a;
+  --tag-mapped-bg: #e6eefe; --tag-mapped-fg: #2847a8;
+  --shadow-float: 0 8px 30px rgba(30,30,42,.08); --shadow-pop: 0 16px 48px rgba(30,30,42,.12);
+}

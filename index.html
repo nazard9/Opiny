@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opiny · Mercury redesign</title><link rel="stylesheet" href="app.css"><link rel="stylesheet" href="public.css">
+<style>
+.idx{max-width:1040px;margin:0 auto;padding:56px 16px 72px}
+.idx h1{margin:0;font-size:34px;font-weight:var(--weight-display);letter-spacing:var(--tracking-display)}
+.idx>p{color:var(--color-text-muted);margin:8px 0 32px}
+.idx h2{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--color-text-subtle);margin:28px 0 12px;font-weight:var(--weight-medium)}
+.idx .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.idx a.card{display:block;padding:20px;transition:transform var(--dur) var(--ease)}
+.idx a.card:hover{transform:translateY(-2px)}
+.idx a.card b{display:block;font-size:16px;font-weight:var(--weight-medium);margin-bottom:6px}
+.idx a.card span{color:var(--color-text-muted);font-size:var(--text-sm)}
+</style></head>
+<body data-key="opiny-theme-v2" data-default="dark">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z"/></symbol></svg>
+<main class="idx">
+  <h1>Opiny — Mercury redesign</h1>
+  <p>Visual-refresh prototype · demo data · light and dark theme (moon button).</p>
+  <h2>Admin</h2>
+  <div class="grid">
+    <a class="card" href="dashboard.html"><b>Dashboard</b><span>Company, KPIs, review trend, sentiment.</span></a>
+    <a class="card" href="locations.html"><b>Locations</b><span>Locations table.</span></a>
+    <a class="card" href="reviews.html"><b>Location → Reviews</b><span>Stats, filters, reviews table.</span></a>
+    <a class="card" href="form.html"><b>Location → Form</b><span>Question list and field palette.</span></a>
+    <a class="card" href="form-field.html"><b>Form → Edit field</b><span>Radio group editor drawer.</span></a>
+  </div>
+  <h2>Customer flow</h2>
+  <div class="grid">
+    <a class="card" href="form-public.html"><b>Public form</b><span>Step form with progress and option cards.</span></a>
+    <a class="card" href="review-preview.html"><b>Review preview</b><span>Sentiment, editable AI review, publish.</span></a>
+    <a class="card" href="review-preview.html#copied"><b>Copied → publish</b><span>Clipboard confirmation and Google steps.</span></a>
+  </div>
+</main>
+<button class="theme-fab" aria-label="Toggle light / dark"><svg class="i"><use href="#i-moon"/></svg></button>
+<script src="public.js"></script>
+</body></html>

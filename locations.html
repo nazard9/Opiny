@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Locations · Opiny (v2 · Mercury dark)</title><link rel="stylesheet" href="app.css"></head>
+<body data-nav="locations">
+<main class="page">
+  <div class="page-head">
+    <div><h1 class="title">Locations</h1><p class="subtitle">Manage your locations</p></div>
+    <div class="actions"><button class="btn btn-primary"><svg class="i"><use href="#i-plus"/></svg>Add location</button></div>
+  </div>
+  <section class="card table-card">
+    <div class="scroll-x"><table>
+      <thead><tr><th>Name</th><th>Languages</th><th>Reviews</th><th>Sentiment</th><th>Google score</th><th><span class="sr" style="position:absolute;left:-9999px">Actions</span></th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="reviews.html"><div class="loc-name">Northwind Studio <svg class="i" style="width:14px;height:14px;fill:#f2b84b;stroke:#f2b84b"><use href="#i-star"/></svg></div><div class="loc-addr">Musterstraße 12, 10115 Berlin, Germany</div></a></td>
+          <td>🇩🇪</td><td class="num">100</td><td><span class="tag positive">Positive</span></td>
+          <td class="num">5.0 <span class="muted" style="font-weight:400">(16)</span></td>
+          <td style="text-align:right"><button class="icon-btn" aria-label="Actions"><svg class="i"><use href="#i-dots"/></svg></button></td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+</main>
+<script src="shell.js"></script>
+</body></html>
